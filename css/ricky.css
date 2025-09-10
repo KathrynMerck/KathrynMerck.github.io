@@ -1,0 +1,145 @@
+/* got the idea of using @property from https://stackoverflow.com/questions/50661638/css-animate-custom-properties-variables*/
+@property --borderBlur {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: maroon;
+}
+@property --gradA {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgba(35, 126, 194, 1);
+}
+@property --gradB {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgba(0, 115, 3, 0.376);
+}
+@property --gradC {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgba(20, 143, 0, 1);
+}
+@property --gradD {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgba(95, 0, 255, 0.533);
+}
+
+
+@keyframes gradA {
+    from{--gradA: rgba(35, 126, 194, 1);}
+    to{--gradA: rgba(35, 126, 194, 0);}
+}
+
+@keyframes gradB {
+    from{--gradB: rgba(0, 115, 3, 0.376);}
+    to{--gradB: rgba(0, 115, 3, 0);}
+}
+
+@keyframes gradC {
+    from{--gradC: rgba(20, 143, 0, 1);}
+    to{--gradC: rgba(20, 143, 0, 0);}
+}
+
+@keyframes gradD {
+    from{--gradD: rgba(95, 0, 255, 0.533);}
+    to{--gradD: rgba(95, 0, 255, 0);}
+}
+
+
+/*learned how to do this from https://stackoverflow.com/questions/12144000/using-custom-fonts-using-css*/
+@font-face {
+    font-family: 'norse'; 
+    src: url(../fonts/NorseBold-2Kge.otf);
+}
+
+html {
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+}
+
+#bodyContainer {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(29, 27, 27);
+    box-shadow: 0px 0px 200px var(--borderBlur) inset;
+    transition: box-shadow 3s 6s, background-color 3s 6s;
+}
+
+#runeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.runes {
+    font-size: 2.2em;
+    font-family: 'norse', serif;
+    color: maroon;
+    text-shadow: 0px 2px 5px #a9a9a920;
+    cursor: default;
+    position: absolute;
+    transition: opacity 3s 3s, text-shadow 6s, transform 1ms 6s, color 6s;
+    opacity: 100%;
+}
+
+#instaLink {
+    position: absolute;
+    z-index: -1;
+    opacity: 0%;
+    width: 30vw;
+    height: 30vw;
+    transition: opacity 3s 6s, transform 1s;
+    outline-offset: -9px;
+    overflow: hidden;
+    border-radius: 10%;
+    -webkit-mask-image: url("https://raw.githubusercontent.com/KathrynMerck/UMLOffBroadwayPlayers/refs/heads/main/insta.svg");
+    mask-image: url("https://raw.githubusercontent.com/KathrynMerck/UMLOffBroadwayPlayers/refs/heads/main/insta.svg");
+    mask-size: contain;
+    mask-mode: alpha;
+}
+
+#instaLink:hover {
+    z-index: 3;
+    transform: scale(1.1);
+    box-shadow: var(--gradA);
+}
+
+.runeHover:hover {
+    background-color: #7fffd442;
+    cursor: url(../images/decode.cur), auto;
+}
+#instaA {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;background-color: aquamarine;
+    background-image: radial-gradient(100% 100% at 20% 15%, var(--gradA), transparent),
+                        radial-gradient(80% 80% at 75% 20%, var(--gradB), transparent),
+                        radial-gradient(100% 100% at 66% 90%, var(--gradC), transparent),
+                        radial-gradient(85% 85% at 50% 80%, var(--gradD), transparent);
+    animation: gradA 5s ease-in-out -2s infinite alternate, 
+    gradB 3s ease-in-out -1s infinite alternate, 
+    gradC 7s ease-in-out -3s infinite alternate, 
+    gradD 4s ease-in-out -5s infinite alternate;
+}
+
+#SVGWrapper {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
