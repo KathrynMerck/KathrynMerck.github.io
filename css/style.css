@@ -75,6 +75,7 @@ a.navBar {
     font-family: Garamond, Times, serif;
     text-align: justify;
     text-indent: 50px;
+    font-size: 1.2em;
 }
 
 .heading {
@@ -139,4 +140,22 @@ a.navBar {
 
 .contact a:hover{
     text-decoration: underline;
+}
+
+.centered, .centered p {
+    text-align: center;
+}
+
+.mainSection button {
+    font-family: Garamond, Times, serif;
+    text-align: justify;
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 40%);
+    border-color: transparent;
+    border-radius: 3px;
+}
+
+.mainSection button:hover {
+    background-color: rgba(255, 255, 255, 60%);
+    cursor: pointer;
 }
