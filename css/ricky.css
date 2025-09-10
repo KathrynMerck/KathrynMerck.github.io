@@ -116,6 +116,7 @@ body {
     z-index: 3;
     transform: scale(1.1);
     box-shadow: var(--gradA);
+    cursor: pointer;
 }
 
 .runeHover:hover {
