@@ -23,6 +23,12 @@ body {
     margin-left: 0px;
 }
 
+#home {
+    float: none;
+    display: inline-block;
+    margin-left: 0px;
+}
+
 #ricky:hover {
     visibility: visible;
     opacity: 10%;
