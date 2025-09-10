@@ -116,6 +116,11 @@ a.navBar {
     border-radius: 50%;
     text-align: center;
 }
+
+.socials svg{
+    width: 1.5em;
+}
+
 .socials a:hover{
     background-color: rgba(255, 255, 255, 70%);
     border: 8px solid rgba(255, 255, 255, 35%);
