@@ -106,8 +106,8 @@ body {
     outline-offset: -9px;
     overflow: hidden;
     border-radius: 10%;
-    -webkit-mask-image: url("https://raw.githubusercontent.com/KathrynMerck/UMLOffBroadwayPlayers/refs/heads/main/insta.svg");
-    mask-image: url("https://raw.githubusercontent.com/KathrynMerck/UMLOffBroadwayPlayers/refs/heads/main/insta.svg");
+    -webkit-mask-image: url("https://raw.githubusercontent.com/KathrynMerck/KathrynMerck.github.io/refs/heads/main/images/insta.svg");
+    mask-image: url("https://raw.githubusercontent.com/KathrynMerck/KathrynMerck.github.io/refs/heads/main/images/insta.svg");
     mask-size: contain;
     mask-mode: alpha;
 }
