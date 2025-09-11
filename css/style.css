@@ -1,3 +1,6 @@
+:root {
+    --fadebase: rgba(255, 255, 255, 20%)
+}
 
 body {
     background-color: black;
@@ -6,7 +9,7 @@ body {
 
 .fadeContainer {
     padding: 10px;
-    background-color: rgba(255, 255, 255, 20%);
+    background-color: var(--fadebase);
 }
 
 .mainSection {
@@ -39,7 +42,7 @@ body {
     float: right;
     margin: 0px 0px 10px 10px;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 20%);
+    background-color: var(--fadebase);
 }
 
 a.navBar {
@@ -158,4 +161,62 @@ a.navBar {
 .mainSection button:hover {
     background-color: rgba(255, 255, 255, 60%);
     cursor: pointer;
+}
+
+/* meet the eboard table stuff */
+
+.photo img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#connorPhoto {
+    position: relative;
+}
+
+.exiled {
+    position: absolute;
+    left: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    background-color: red;
+    border-radius: 5px;
+    width: 80%;
+
+    transform: skewX(-30deg), skewY(60deg);
+    transform-origin: 0px 0px;
+}
+
+.eboardtable {
+    border-collapse: separate;
+    border-spacing: 20px 0px;
+    margin: 20px 0px;
+}
+
+.eboardtable td{
+    text-align: center;
+    background-color: var(--fadebase);
+    padding: 10px;
+    position: relative;
+}
+
+.eboarddiv {
+    background-color: var(--fadebase);
+    overflow-x: scroll;
+}
+
+hr {
+    border-style: solid;
+    border-color: var(--fadebase);
+}
+
+.eboarddiv hr {
+    position: absolute;
+    bottom: 0px;
+    width: 80%;
+    margin: auto;
+    left: 10%;
+    border-radius: .75px;
 }
