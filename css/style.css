@@ -181,12 +181,12 @@ a.navBar {
     left: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 10px;
+    font-size: 3em;
     background-color: red;
     border-radius: 5px;
-    width: 80%;
-
-    transform: skewX(-30deg), skewY(60deg);
-    transform-origin: 0px 0px;
+    left: 10%;
+    transform-origin: left top;
+    z-index: 3;
 }
 
 .eboardtable {
