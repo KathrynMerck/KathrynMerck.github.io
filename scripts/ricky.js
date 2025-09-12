@@ -1,3 +1,11 @@
+
+/** File: ricky.js
+GUI Assignment: Creating Your First Web Page
+Kathryn Merck, UMass Lowell Computer Science, kathryn_merck@student.uml.edu
+Copyright (c) 2025 by Kathryn. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated 9/10/25
+Rune decoder and also reveal insta link once completed, not super optimized */
 const runeMap = new Map();
 runeMap.set("feh", ["&#x16A0;", "ᚠ",  "f"]);
 runeMap.set("ur", ["&#x16A2;", "ᚢ", "u"]);

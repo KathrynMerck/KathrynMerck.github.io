@@ -1,3 +1,11 @@
+/* File: index.html
+GUI Assignment: Creating Your First Web Page
+Kathryn Merck, UMass Lowell Computer Science, kathryn_merck@student.uml.edu
+Copyright (c) 2025 by Kathryn. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated 9/10/25
+A fun site for a club I'm in */
+
 :root {
     --fadebase: rgba(255, 255, 255, 20%)
 }
@@ -146,6 +154,7 @@ a.navBar {
 
 .centered, .centered p {
     text-align: center;
+    text-indent: initial;
 }
 
 .mainSection button {
@@ -160,6 +169,12 @@ a.navBar {
 .mainSection button:hover {
     background-color: rgba(255, 255, 255, 60%);
     cursor: pointer;
+}
+
+.textbox {
+    margin: auto;
+    margin-top: 10px;
+    width: 80%;
 }
 
 /* meet the eboard table stuff */

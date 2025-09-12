@@ -1,3 +1,11 @@
+/* File: Ricky.css
+GUI Assignment: Creating Your First Web Page
+Kathryn Merck, UMass Lowell Computer Science, kathryn_merck@student.uml.edu
+Copyright (c) 2025 by Kathryn. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated 9/10/25
+complicated styles for the unecessary ricky page */
+
 /* got the idea of using @property from https://stackoverflow.com/questions/50661638/css-animate-custom-properties-variables*/
 @property --borderBlur {
     syntax: "<color>";
@@ -134,9 +142,9 @@ body {
                         radial-gradient(100% 100% at 66% 90%, var(--gradC), transparent),
                         radial-gradient(85% 85% at 50% 80%, var(--gradD), transparent);
     animation: gradA 5s ease-in-out -2s infinite alternate, 
-    gradB 3s ease-in-out -1s infinite alternate, 
-    gradC 7s ease-in-out -3s infinite alternate, 
-    gradD 4s ease-in-out -5s infinite alternate;
+               gradB 3s ease-in-out -1s infinite alternate, 
+               gradC 7s ease-in-out -3s infinite alternate, 
+               gradD 4s ease-in-out -5s infinite alternate;
 }
 
 #SVGWrapper {
